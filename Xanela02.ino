@@ -1,9 +1,9 @@
 # Automatismo-xanela-de-coche
-Continuacion de p`ractica de Xanela pasando por paro
+Continuacion de práctica de Xanela pasando por paro
 
 
-/******
-Nesta practica o esencial e que o cambio pase por paro antes de comezar outro motor
+/******     Codigo limpo para máis claridade e curiosidade.
+Nesta práctica o esencial e que o cambio pase por paro antes de comezar outro motor
  o resto sera igual que na practica anterior, incluindo un inicio de traballo desde paro
   Programa para simular a funcion dunha xanela de automovil 
    de maneira simplificada. O motor acciona o motor se subida 
@@ -33,7 +33,6 @@ void setup() {
   pinMode(pulsador, INPUT);
   
   Serial.begin(9600); //poñemos o monitor serie en funcionamento
-
  
 }
 
@@ -61,7 +60,6 @@ void loop() {
     Serial.print(contador); // aqui poñera o dato
     Serial.print("   |   Estado = ");
     Serial.println(estado);  
-    
   
   // Arrancamos motores
      
