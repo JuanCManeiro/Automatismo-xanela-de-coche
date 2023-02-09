@@ -2,13 +2,14 @@
 Continuacion de p`ractica de Xanela pasando por paro
 
 
-/*
+/******
 Nesta practica o esencial e que o cambio pase por paro antes de comezar outro motor
-o resto sera igual que na practica anterior, incluindo un inicio de traballo desde paro
-Programa para simular a funcion dunha xanela de automovil 
-de maneira simplificada. O motor acciona o motor se subida 
-ao ser premido, Unha segunda pulsacion fai que se accione
-o motor de baixada. o motor sube durante 7 sg despois pode baixar tamen 7sg 
+ o resto sera igual que na practica anterior, incluindo un inicio de traballo desde paro
+  Programa para simular a funcion dunha xanela de automovil 
+   de maneira simplificada. O motor acciona o motor se subida 
+    ao ser premido, Unha segunda pulsacion para, a 3ª que se accione
+     o motor de baixada e unha 4ª para que pare de novo. O motor sube durante 7 sg e para
+      despois pode baixar tamen 7sg para volver parar 
 
 Entrada: Pulsador (dixital)
 Saídas:  Relé (2xdixital)
@@ -16,8 +17,15 @@ Saídas:  Relé (2xdixital)
 Autor:..... Comunidade e Juan Carlos Maneiro Moreira
 Data: Febreiro'23
 
-Sempre despois de cada orde hay que poñer ; non telo da erro
-*/
+	Aproveitando a montaxe da práctica anterior,
+  imos modificar o programa para que o pulsador faga un paso por paro antes de invertir o sentido de movemento do vidro. 
+  É dicir, ao premer unha vez, o pulsador move o vidro segundo o estado en que quedou na vez anterior.
+  Ao pulsar novamente antes de que pare ao cabo de 7 segundos, o vidro ten que parar e ao pulsar novamente, debe invertir o movemento.
+
+Imos facer a montaxe dos dous relés e o pulsador,
+asegurando que non haxa posibilidade de queimar a placa Arduíno mediante unha sobrecarga. 
+En particular teremos de protexer o pulsador, de maneira que ante un erro de programación, non se chegue a pór en curto o pin de entrada.
+                   ******/
 
 #define motorArriba 11 // no levan igual nin levan punto e coma
 #define motorAbaixo 12
